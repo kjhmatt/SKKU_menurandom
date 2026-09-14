@@ -44,31 +44,6 @@
 
 ---
 
-## 🚀 GitHub Pages 배포 가이드
-
-순수 HTML5 / CSS3 / Vanilla JavaScript로 개발되어 별도의 빌드 도구 없이 정적 호스팅으로 즉시 배포할 수 있습니다.
-
-1. **GitHub 저장소 생성 및 코드 Push**
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: 율천동 메뉴랜덤 배포"
-   git branch -M main
-   git remote add origin https://github.com/<사용자명>/<저장소명>.git
-   git push -u origin main
-   ```
-
-2. **GitHub Pages 활성화**
-   - GitHub 저장소의 **Settings** → **Pages**로 이동합니다.
-   - **Build and deployment > Source**를 `Deploy from a branch`로 선택합니다.
-   - **Branch**를 `main` (루트 `/ (root)`)으로 지정 후 **Save**를 클릭합니다.
-
-3. **커스텀 도메인 연동 (Cloudflare DNS)**
-   - Cloudflare DNS에 CNAME 레코드 추가 (`Name: 서브도메인`, `Target: <사용자명>.github.io`).
-   - 저장소 **Custom domain**에 해당 서브도메인을 등록하고 **Enforce HTTPS**를 활성화합니다.
-
----
-
 ## 📂 프로젝트 구조
 
 ```
